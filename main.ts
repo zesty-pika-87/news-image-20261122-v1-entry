@@ -2,6 +2,8 @@
 // This entry ships the rendered newspaper image: the program copies
 // entry.png (the front page drawn for this date) into the output dir.
 // The image is the entry; the program is only its carrier.
+// The map pins are numbered to match the index, so a reader can trace
+// any headline to its place on the map without reading the index first.
 import { copyFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
